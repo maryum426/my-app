@@ -43,6 +43,7 @@ function addTableRow(todoDictionary, appIsLoading)
     element1.name = "chkbox[]";
     element1.checked = todoDictionary["check"];
     element1.setAttribute("onclick", "checkboxClicked()");
+    element1.className = "checkbox"; // ADD ME - Add the class name 'checkbox' to element1
     cell1.appendChild(element1);
  
     // create the textbox
@@ -54,6 +55,7 @@ function addTableRow(todoDictionary, appIsLoading)
     element2.id = "text" + rowID;
     element2.value = todoDictionary["text"];
     element2.setAttribute("onchange", "saveToDoList()");
+    element2.className = "textbox"; // ADD ME - Add the class name 'textbox' to element2
     cell2.appendChild(element2);
  
     // create the view button
@@ -63,6 +65,7 @@ function addTableRow(todoDictionary, appIsLoading)
     element3.id = rowID;
     element3.value = "View";
     element3.setAttribute("onclick", "viewSelectedRow(document.getElementById('text' + this.id))");
+    element3.className = "viewButton"; // ADD ME - Add the class name 'viewButton' to element3
     cell3.appendChild(element3);
  
     // create the delete button
@@ -71,6 +74,7 @@ function addTableRow(todoDictionary, appIsLoading)
     element4.type = "button";
     element4.value = "Delete";
     element4.setAttribute("onclick", "deleteSelectedRow(this)");
+    element4.className = "deleteButton"; // ADD ME - Add the class name 'deleteButton' to element4
     cell4.appendChild(element4);
  
     // update the UI and save the to-do list
@@ -249,24 +253,6 @@ function deleteAllRows()
     // save the to-do list
     saveToDoList();
 }
-
-
-element1.setAttribute("onclick","checkboxClicked()");
-element1.className = "checkbox"; // ADD ME - Add the class name 'checkbox' to element1
-cell1.appendChild(element1);
-
-element2.setAttribute("onchange", "saveToDoList()");
-element2.className = "textbox"; // ADD ME - Add the class name 'textbox' to element2
-cell2.appendChild(element2);
-
-element3.setAttribute("onclick", "viewSelectedRow(document.getElementById('text' + this.id))");
-element3.className = "viewButton"; // ADD ME - Add the class name 'viewButton' to element3
-cell3.appendChild(element3);
-
-
-element4.setAttribute("onclick", "deleteSelectedRow(this)");
-element4.className = "deleteButton"; // ADD ME - Add the class name 'deleteButton' to element4
-cell4.appendChild(element4);
         </script>
     </head>
     <body onload="loadToDoList()">
@@ -278,7 +264,7 @@ cell4.appendChild(element4);
 <br/>
 <br/>
 
-    <table id="dataTable" width="100%" border="1" style= "margin-top:10px">
+    <table id="dataTable" width="100%" border="1" style= "margin-top:20px">
  
     </table>
 </body>
