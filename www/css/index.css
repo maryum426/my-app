@@ -130,18 +130,27 @@ height: 32px;
  
 .textbox {
 background-color: grey;
+border-radius: 3px;
+border:none;
+padding:5px;
 }
  
 .viewButton { 
 background-color: Transparent;
+border:none;
 background-image: url('../img/button_view.png');
 width: 64px;
-height: 32px;
+height: 30px;
 }
  
 .deleteButton { 
 background-color: Transparent;
+border:none;
 background-image: url('../img/button_delete.png');
 width: 64px;
-height: 32px;
+height: 30px;
+}
+
+#dataTable{
+    margin-top: 20px;
 }
