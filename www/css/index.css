@@ -123,7 +123,7 @@ right: 0px;
  
 .checkbox {
 background-color: Transparent;
-background-image: url('img/check_box.png');
+background-image: url('../img/check_box.png');
 width: 34px;
 height: 32px;
 }
@@ -134,14 +134,14 @@ background-color: grey;
  
 .viewButton { 
 background-color: Transparent;
-background-image: url('img/button_view.png');
+background-image: url('../img/button_view.png');
 width: 64px;
 height: 32px;
 }
  
 .deleteButton { 
 background-color: Transparent;
-background-image: url('img/button_delete.png');
+background-image: url('../img/button_delete.png');
 width: 64px;
 height: 32px;
 }
